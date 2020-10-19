@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,24 +22,44 @@
 	  <header>
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
+      	<div class="navbar-header">
         <div class="navbar-brand pull-left">
         	FOOD, LLC
         </div>
-        <div class="dropdown pull-right">
-         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-         	<span class="icon-bar"></span>
+       <div class="dropdown pull-right visible-xs">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
         </div>
-      </div><!-- .container -->
+    </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li class="visible-xs">
+              <a href="#Chicken">
+                Chicken</a>
+            </li>
+            <li class="visible-xs">
+              <a href="#Beef">
+                <br class="hidden-xs">Beef</a>
+            </li>
+            <li class="visible-xs">
+              <a href="#Sushi">
+          <br class="hidden-xs">Sushi</a>
+            </li>
+ 
+          </ul><!-- #nav-list -->
+        </div>
+  </div><!-- .container -->
     </nav><!--
      #header-nav -->
   </header>
   <h1 class="text-center">Our Menu</h1>
 
   <section class="container">
-  	<p class= col-md-12 col-sm-12 col-xs-12>
+  	<p id="Chicken" class= col-md-12 col-sm-12 col-xs-12>
   		<h2 class="text-center"> Chicken </h2>
   		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan pretium mattis. In risus sem, faucibus eu placerat ac, volutpat at dui. Integer id fermentum sem, et pellentesque metus. Donec facilisis nisi ac mi ullamcorper, ut hendrerit augue consectetur. Aenean commodo lacus eu scelerisque hendrerit. Phasellus dui ligula, tempus sit amet sagittis sed, convallis eu libero. Vivamus rhoncus orci non nisi dapibus, sit amet facilisis sapien posuere. Etiam vel sodales massa.
 
@@ -50,7 +72,7 @@
         Morbi quis elit sed augue lobortis porttitor in vitae eros. Vivamus tellus lacus, dapibus accumsan iaculis quis, eleifend dapibus felis. Quisque efficitur libero a sapien pretium, non eleifend metus blandit. Mauris eu mauris mollis, ultrices purus sit amet, malesuada purus. Nulla euismod dignissim leo. Quisque egestas dui nec metus lacinia elementum. Donec sed bibendum eros. Donec at efficitur ex. Nulla nec massa id tellus interdum cursus.
     </p>
 
-    <p class= col-md-12 col-sm-12 col-xs-12>
+    <p id="Beef" class= col-md-12 col-sm-12 col-xs-12>
     	<h2  class="text-center"> Beef </h2>
   		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan pretium mattis. In risus sem, faucibus eu placerat ac, volutpat at dui. Integer id fermentum sem, et pellentesque metus. Donec facilisis nisi ac mi ullamcorper, ut hendrerit augue consectetur. Aenean commodo lacus eu scelerisque hendrerit. Phasellus dui ligula, tempus sit amet sagittis sed, convallis eu libero. Vivamus rhoncus orci non nisi dapibus, sit amet facilisis sapien posuere. Etiam vel sodales massa.
 
@@ -63,7 +85,7 @@
         Morbi quis elit sed augue lobortis porttitor in vitae eros. Vivamus tellus lacus, dapibus accumsan iaculis quis, eleifend dapibus felis. Quisque efficitur libero a sapien pretium, non eleifend metus blandit. Mauris eu mauris mollis, ultrices purus sit amet, malesuada purus. Nulla euismod dignissim leo. Quisque egestas dui nec metus lacinia elementum. Donec sed bibendum eros. Donec at efficitur ex. Nulla nec massa id tellus interdum cursus.
     </p>
 
-    <p class= col-md-12 col-sm-12 col-xs-12>
+    <p id="Sushi" class= col-md-12 col-sm-12 col-xs-12>
     	<h2  class="text-center"> Sushi </h2>
   		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan pretium mattis. In risus sem, faucibus eu placerat ac, volutpat at dui. Integer id fermentum sem, et pellentesque metus. Donec facilisis nisi ac mi ullamcorper, ut hendrerit augue consectetur. Aenean commodo lacus eu scelerisque hendrerit. Phasellus dui ligula, tempus sit amet sagittis sed, convallis eu libero. Vivamus rhoncus orci non nisi dapibus, sit amet facilisis sapien posuere. Etiam vel sodales massa.
 
