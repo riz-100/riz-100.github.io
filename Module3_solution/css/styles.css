@@ -10,11 +10,23 @@ body {
 }
 .navbar-header button.navbar-toggle {
   clear: both;
-  margin-top: -30px;
 }
 
-@media (max-width: 767px) {
-#collapsable-nav a { /* Collapsed nav menu text */
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+  #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
   }
-}
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
